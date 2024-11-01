@@ -5,21 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Imagens Destacadas</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .highlight-boxes {
+            display: flex;
+            gap: 20px;
+        }
+
+        .box {
+            padding: 20px;
+            border-radius: 5px;
+            color: #fff;
+            cursor: pointer;
+            transition: 0.3s;
+            width: 200px;
+            text-align: center;
+        }
+
+        .red {
+            background-color: #FF0000;
+        }
+
+        .black {
+            background-color: #000000;
+        }
+
+        .white {
+            background-color: #FFFFFF;
+            color: #000; /* Texto em preto para contraste */
+        }
+
+        .box:hover {
+            opacity: 0.8;
+        }
+    </style>
 </head>
 <body>
     <div class="highlight-boxes">
-        <div class="box red">
+        <div class="box red" onclick="showMessage('Destaque Vermelho: Esta é uma caixa de destaque em vermelho.')">
             <h2>Destaque Vermelho</h2>
             <p>Esta é uma caixa de destaque em vermelho.</p>
         </div>
-        <div class="box black">
+        <div class="box black" onclick="showMessage('Destaque Preto: Esta é uma caixa de destaque em preto.')">
             <h2>Destaque Preto</h2>
             <p>Esta é uma caixa de destaque em preto.</p>
         </div>
-        <div class="box white">
+        <div class="box white" onclick="showMessage('Destaque Branco: Esta é uma caixa de destaque em branco.')">
             <h2>Destaque Branco</h2>
             <p>Esta é uma caixa de destaque em branco.</p>
         </div>
     </div>
+
+    <script>
+        function showMessage(message) {
+            alert(message);
+        }
+    </script>
 </body>
-                                                        </html>
+</html>
