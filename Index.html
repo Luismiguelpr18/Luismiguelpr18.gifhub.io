@@ -1,79 +1,90 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Imagens Destacadas</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Venda do E-book: Como Crescer no YouTube</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
-
-        .highlight-boxes {
-            display: flex;
-            gap: 20px;
-        }
-
-        .box {
-            padding: 20px;
-            border-radius: 5px;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
             color: #fff;
-            cursor: pointer;
-            transition: 0.3s;
-            width: 200px;
+        }
+        header {
+            background-color: #f00;
+            padding: 20px;
             text-align: center;
         }
-
-        .red {
-            background-color: #FF0000;
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
         }
-
-        .black {
-            background-color: #000000;
+        h2 {
+            color: #fff;
+            margin-top: 20px;
         }
-
-        .white {
-            background-color: #FFFFFF;
-            color: #000; /* Texto em preto para contraste */
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
         }
-
-        .box:hover {
-            opacity: 0.8;
+        .ebook-image {
+            max-width: 100%;
+            height: auto;
+        }
+        .cta {
+            background-color: #f00;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            margin: 20px 0;
+            font-size: 1.5em;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .cta:hover {
+            background-color: #c00;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #333;
+        }
+        .contact {
+            color: #fff;
+            font-size: 1em;
         }
     </style>
 </head>
 <body>
-    <div class="highlight-boxes">
-        <div class="box red" onclick="showMessage('Destaque Vermelho: Esta é uma caixa de destaque em vermelho.')">
-            <h2>Destaque Vermelho</h2>
-            <p>Esta é uma caixa de destaque em vermelho.</p>
-        </div>
-        <div class="box black" onclick="showMessage('Destaque Preto: Esta é uma caixa de destaque em preto.')">
-            <h2>Destaque Preto</h2>
-            <p>Esta é uma caixa de destaque em preto.</p>
-        </div>
-        <div class="box white" onclick="showMessage('Destaque Branco: Esta é uma caixa de destaque em branco.')">
-            <h2>Destaque Branco</h2>
-            <p>Esta é uma caixa de destaque em branco.</p>
-        </div>
+
+<header>
+    <h1>Transforme sua Carreira no YouTube!</h1>
+    <h2>Adquira nosso e-book e aprenda a crescer do zero ao sucesso!</h2>
+</header>
+
+<div class="container">
+    <img src="Ebook.jpg" alt="Capa do E-book" class="ebook-image"> <!-- Insira aqui a URL da imagem da capa do e-book -->
+    <p>Você quer se tornar um criador de conteúdo de sucesso no YouTube? <strong>Nosso e-book "Como Crescer no YouTube" é a chave para abrir as portas do sucesso!</strong></p>
+    <p>Descubra estratégias comprovadas, dicas valiosas e segredos que os grandes influenciadores não querem que você saiba.</p>
+
+    <div class="cta">
+        <strong>Adquira agora por apenas R$29,90!</strong>
     </div>
 
-    <script>
-        function showMessage(message) {
-            alert(message);
-        }
-    </script>
+    <p>Entre em contato para mais informações:</p>
+    <p class="contact">E-mail: <a href="mailto:seuemail@example.com" style="color: #fff;">seuemail@example.com</a></p>
+</div>
+
+<footer>
+    <p>&copy; 2023 Seu Nome. Todos os direitos reservados.</p>
+</footer>
+
 </body>
 </html>
+```
+
